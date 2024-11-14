@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+			padding:10px
+        }
+		
+    </style>
+</head>
+<body>
+    <table style="width: 100%; height: 100%;">
+        <tr>
+            <!-- Left Column with Nested Tables 2 and 3 -->
+            <td>
+                <!-- Nested Table 2 -->
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Nested Table 2</th>
+                        </tr>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>abc</td>
+                            <td>def</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br> <!-- Space between nested tables -->
+
+                <!-- Nested Table 3 -->
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Nested Table 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Nested Table</a></td>
+                            <td>Demo Continued</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+
+            <!-- Right Column with Nested Tables 1 and 4 -->
+            <td>
+                <!-- Nested Table 1 -->
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Nested Table 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br> <!-- Space between nested tables -->
+
+                <!-- Nested Table 4 -->
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Nested Table 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="background-color: black; color: white; text-align: center;">HTML</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
     </table>
-  </body>
+</body>
 </html>
+
+
